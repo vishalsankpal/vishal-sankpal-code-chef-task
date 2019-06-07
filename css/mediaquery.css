@@ -1,0 +1,210 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px !important;
+    }
+
+    .exam-date-expiry {
+        word-spacing: 0.2rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px !important;
+    }
+
+    .banner {
+        /* height: 71.9vh !important; */
+        height: calc(100vh - 12.5rem) !important;
+    }
+
+    .exam-date-expiry {
+        word-spacing: 0rem !important;
+        font-size: 1rem;
+    }
+
+    .dsa-certifiaction-information p {
+        font-size: 1.3rem !important;
+    }
+
+    .sub-info {
+        font-size: 1.5rem !important;
+    }
+
+    .ftr-menu {
+        display: block !important;
+        text-align: center;
+    }
+
+    .part1 {
+        width: 100% !important;
+        display: block !important;
+        text-align: center !important;
+    }
+
+    .part2 {
+        width: 100% !important;
+        display: block !important;
+        text-align: center !important;
+    }
+
+    .payment {
+        text-align: center !important;
+    }
+
+    .payment-method {
+        width: 20%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px !important;
+
+    }
+
+    .logo .codechef-logo {
+        width: 90% !important;
+
+    }
+
+    .banner {
+        /* height: 71.9vh !important; */
+        height: calc(100vh - 12.2rem) !important;
+    }
+
+    .heading-font {
+        font-size: 1.5rem !important;
+    }
+
+    .sub-info {
+        font-size: 1rem !important;
+    }
+
+    .certification-in-dsa {
+
+        font-weight: 800 !important;
+    }
+
+    .codechef-multilavel-assignment {
+
+        margin-bottom: 1.5rem !important;
+    }
+
+    .exam-date-expiry {
+        word-spacing: 0rem !important;
+        font-size: 1rem !important;
+    }
+
+    .dsa-certifiaction-information p {
+        font-size: 1rem !important;
+    }
+
+    .ftr-menu {
+        display: block !important;
+        text-align: center;
+    }
+
+    .part1 {
+        width: 100% !important;
+        display: block !important;
+        text-align: center !important;
+    }
+
+    .part2 {
+        width: 100% !important;
+        display: block !important;
+        text-align: center !important;
+    }
+
+    .payment {
+        text-align: center !important;
+    }
+
+    .payment-method {
+        width: 20%;
+    }
+}
+
+@media (max-width: 425px) {
+    .dsa-certifiaction-information p {
+        font-size: 0.9rem !important;
+    }
+
+    .dsa-certification-heading h1 {
+        font-size: 2rem !important;
+    }
+
+    .nav {
+        padding: 0.5rem !important;
+    }
+
+    .company-details-login-sign-up {
+        padding: 0.5rem 0rem !important;
+    }
+
+    .exam-date-expiry {
+        word-spacing: 0rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    .sub-info {
+        font-size: 1rem !important;
+    }
+
+    .img-content {
+        width: 100% !important;
+    }
+
+    .left-control {
+        left: 0;
+        top: 50%;
+    }
+
+    .right-control {
+        top: 50%;
+        right: 0;
+    }
+
+    .certified-user-grid {
+        /* text-align: -webkit-center; */
+        margin: 0 auto;
+        width: 65%;
+        display: -ms-grid;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    }
+
+    .ftr-menu {
+        display: block !important;
+        text-align: center;
+    }
+
+    .part1 {
+        width: 100% !important;
+        display: block !important;
+        text-align: center !important;
+    }
+
+    .part2 {
+        width: 100% !important;
+        display: block !important;
+        text-align: center !important;
+    }
+
+    .payment {
+        text-align: center !important;
+    }
+
+    .payment-method {
+        width: 20%;
+    }
+}
