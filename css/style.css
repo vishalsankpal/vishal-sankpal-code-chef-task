@@ -361,6 +361,8 @@ body {
     line-height: 0.94;
     letter-spacing: normal;
     color: #3b3a3a;
+    font-size: 36px;
+    font-weight: 400;
 }
 
 /* css of tabs */
