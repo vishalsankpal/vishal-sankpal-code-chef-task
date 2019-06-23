@@ -12,16 +12,15 @@
     .exam-date-expiry {
         word-spacing: 0.2rem !important;
     }
+
+    .divider {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
     .container {
         max-width: 720px !important;
-    }
-
-    .banner {
-        /* height: 71.9vh !important; */
-        height: calc(100vh - 12.5rem) !important;
     }
 
     .exam-date-expiry {
@@ -33,9 +32,9 @@
         font-size: 1.3rem !important;
     }
 
-    .sub-info {
+    /* .sub-info {
         font-size: 1.5rem !important;
-    }
+    } */
 
     .ftr-menu {
         display: block !important;
@@ -61,40 +60,150 @@
     .payment-method {
         width: 20%;
     }
+
+    .tool-tip::after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        top: 8%;
+        right: 90%;
+        margin-top: -20px;
+        border-width: 50px 60px 0px 25px;
+        border-style: dashed;
+        -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        z-index: -1;
+        border-color: transparent #fce689 transparent transparent;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .img-content {
+        width: 100% !important;
+    }
+
+    .ftr-menu {
+        display: block !important;
+        text-align: center;
+    }
+
+    .display-flex {
+        display: block;
+    }
+
+    .cc-dsa {
+        text-align: center;
+    }
+
+    .ftr-color-dot {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .center-card {
+        text-align: -webkit-center;
+    }
+
+    .amit-info {
+        font-size: 16px !important;
+    }
+
+    .left-control {
+        left: 0%;
+
+    }
+
+    .right-control {
+        right: 0%;
+    }
+    .left-overlay,.right-overlay{
+        display: none;
+    }
+    
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
     .container {
         max-width: 540px !important;
 
     }
+    .slider-center{
+        width: 100%;
+    }
+    .testimonials {
+        text-align: left;
+    }
 
-    .logo .codechef-logo {
-        width: 90% !important;
-
+    .testimonial-info {
+        font-size: 20px;
+        text-align: justify;
     }
 
     .banner {
-        /* height: 71.9vh !important; */
-        height: calc(100vh - 12.2rem) !important;
+        height: 615px !important;
+        background: url('../images/Mobile-banner.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: right;
     }
+
+    .logo .codechef-logo {
+        width: 237.23px !important;
+        height: 33.22px;
+
+    }
+
 
     .heading-font {
-        font-size: 1.5rem !important;
+        font-size: 31px !important;
+        margin-bottom: 2.5rem;
+    }
+    .job-profile {
+        font-size: 18px !important;
     }
 
-    .sub-info {
-        font-size: 1rem !important;
+    .foundation-certified {
+        font-size: 16px !important;
     }
 
-    .certification-in-dsa {
+    .f-20-f-18 {
+        font-size: 18px;
+    }
 
-        font-weight: 800 !important;
+    .f-20-f-22 {
+        font-size: 22px;
+    }
+
+    .certified-user {
+        text-align: justify;
+    }
+
+    .certified-user-para {
+        text-align: justify;
+    }
+
+    .id-number-flex {
+        font-size: 12px;
+    }
+
+    .menu-bar li a {
+        font-size: 14px;
+        font-family: 'Ubuntu';
     }
 
     .codechef-multilavel-assignment {
 
         margin-bottom: 1.5rem !important;
+    }
+
+    .tab-nav {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+
     }
 
     .exam-date-expiry {
@@ -130,15 +239,78 @@
     .payment-method {
         width: 20%;
     }
+
+    .img-content {
+        width: 345px !important;
+        margin: 0 3.2rem;
+        padding: 2rem;
+    }
+
+    .tool-tip::after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        top: 8%;
+        right: 90%;
+        margin-top: -20px;
+        border-width: 26px 60px 0px 25px;
+        border-style: dashed;
+        -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        z-index: -1;
+        border-color: transparent #fce689 transparent transparent;
+    }
+
+    .left-control {
+        left: 0%;
+    }
+
+    .right-control {
+        right: 0%;
+    }
+
+    .overlay-on-card {
+        width: 20%;
+    }
+
+    .information-of-user {
+        margin: 0 auto;
+    }
+
+    .display-flex {
+        display: block;
+    }
+
+    .cc-dsa {
+        text-align: center;
+    }
+
+    .ftr-color-dot {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .divider {
+        display: none;
+    }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 466px) {
     .dsa-certifiaction-information p {
-        font-size: 0.9rem !important;
+        font-size: 18px !important;
     }
 
     .dsa-certification-heading h1 {
-        font-size: 2rem !important;
+        font-size: 36px !important;
     }
 
     .nav {
@@ -154,8 +326,17 @@
         font-size: 0.6rem !important;
     }
 
-    .sub-info {
-        font-size: 1rem !important;
+    .level-heading {
+        font-size: 36px;
+        text-align: left !important;
+        font-weight: 400;
+    }
+
+    /* .sub-info {
+        font-size: 16px !important;
+    } */
+    .testimonial-info {
+        font-size: 20px !important;
     }
 
     .img-content {
@@ -173,13 +354,13 @@
     }
 
     .certified-user-grid {
-        /* text-align: -webkit-center; */
+
         margin: 0 auto;
-        width: 65%;
+        width: 100%;
         display: -ms-grid;
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(221px, 1fr));
 
     }
 
@@ -206,5 +387,102 @@
 
     .payment-method {
         width: 20%;
+    }
+
+    /* .fw-fs-fs{
+        font-size: 14px;
+    } */
+    .id-number-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 12px;
+    }
+
+    .tool-tip::after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        top: 0%;
+        right: 65%;
+        margin-top: -20px;
+        border-width: 50px 60px 0px 25px;
+        border-style: dashed;
+        -webkit-transform: rotate(145deg);
+            transform: rotate(145deg);
+        z-index: -1;
+        border-color: transparent #fce689 transparent transparent;
+    }
+
+    .amits-profile {
+        height: 125px;
+        z-index: 1;
+        /* margin: auto 0 2rem 0 !important; */
+    }
+
+    .img,
+    content {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+    }
+
+    .profile-information {
+        position: relative;
+        left: -75px;
+        width: 140px;
+    }
+
+    .foundation-color {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 50px !important;
+        margin: 10px 0 0 0 !important;
+    }
+
+    .foundation-certified-and-dots {
+        display: block;
+        text-align: justify;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .mail-id,
+    .contact-number,
+    .login,
+    .new-user {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline;
+        padding: 0px 0.4rem;
+    }
+
+    .tabset>label {
+        position: relative;
+        display: inline-block;
+        padding: 15px 10px 15px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .codechef-multilavel-assignment {
+        font-size: 18px !important;
+    }
+    .slider-center{
+        margin: 0 15rem;
     }
 }
