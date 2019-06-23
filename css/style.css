@@ -185,12 +185,13 @@ body {
 .active-nav::after {
     position: absolute;
     content: '';
-    width: 20px;
+    width: 25px;
     background-color: #ff5912;
     color: #ff5912;
     height: 3px;
     left: 0;
     bottom: -12px;
+    border-radius: 25%;
 }
 
 .nav {
@@ -398,8 +399,9 @@ body {
     position: absolute;
     left: 15px;
     bottom: 10px;
-    width: 22px;
+    width: 25px;
     height: 4px;
+    border-radius: 25%;
 }
 
 .tabset>label,
