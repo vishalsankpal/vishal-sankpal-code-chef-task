@@ -6,22 +6,32 @@
     scroll-behavior: smooth;
     font-family: 'Ubuntu';
 }
-body{
-    overflow-x: hidden; 
+
+body {
+    overflow-x: hidden;
 }
+
 .container {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
+
 .grid {
     display: -ms-grid;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
+}
+
+.display-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .icon-color {
@@ -58,20 +68,22 @@ body{
 }
 
 .heading-font {
-    font-size: 3rem !important;
+    font-size: 46px !important;
     margin-bottom: 1rem;
 }
 
 .sub-info {
-    font-size: 1.5rem !important;
+    font-size: 20px !important;
 }
-.fw-fs-fs{
+
+.fw-fs-fs {
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
 }
+
 .enroll-now {
-    font-size: 1rem;
+    font-size: 18px;
     line-height: 2.67;
     letter-spacing: normal;
     text-align: left;
@@ -89,14 +101,16 @@ body{
 
 .company-details-login-sign-up .grid .box .mail-address,
 .number {
-   
-    font-size: 1rem;
+
+    font-size: 12px;
     line-height: 1.2;
     letter-spacing: normal;
     text-align: left;
     color: #34404b;
     padding-left: 0.3rem;
     cursor: pointer;
+    position: relative;
+
 }
 
 .company-details-login-sign-up .grid .right {
@@ -105,7 +119,7 @@ body{
 }
 
 .login-user {
-    font-size: 1rem;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: normal;
     text-align: left;
@@ -114,7 +128,7 @@ body{
 }
 
 .new-user-sign-up {
-    font-size: 1rem;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: normal;
     text-align: left;
@@ -138,14 +152,16 @@ body{
     display: inline-flex;
     padding: 0px 0.6rem;
 }
+
 .line {
     opacity: 0.5;
     background-color: #e6e8eb;
     width: 100%;
     height: 1px;
 }
+
 /* sticky nav */
-.sticky-nav{
+.sticky-nav {
     position: fixed !important;
     top: 0 !important;
     width: 100% !important;
@@ -154,21 +170,40 @@ body{
     -webkit-transition: 0.5s ease-in;
     transition: 0.5s ease-in;
 }
+
 .sticky-logo .sticky-codechef-logo {
     width: 100%;
     height: 3rem !important;
 }
+
 /* navigation */
 .active-nav {
     color: #ff5912 !important;
+    position: relative;
 }
+
+.active-nav::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    background-color: #ff5912;
+    color: #ff5912;
+    height: 3px;
+    left: 0;
+    bottom: -12px;
+}
+
 .nav {
     padding: 1rem;
 }
 
+.menu-bar a:hover {
+    color: #ff5912;
+}
+
 .logo .codechef-logo {
-    width: 100%;
-    height: 3rem;
+    width: 362.48px;
+    height: 57.02px;
 }
 
 .menu-bar {
@@ -187,6 +222,7 @@ body{
     letter-spacing: normal;
     text-align: right;
     color: #34404b;
+    font-family: 'Ubuntu';
 }
 
 .menus {
@@ -221,9 +257,9 @@ body{
     /* background: url("../images/Banner\ Base\ White.jpg"); */
     background: url("../images/banner.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-position-x: right;
     width: 100%;
-    height: calc(100vh - 10.5rem) !important;
+    height: 644px !important;
     background-size: cover;
     background-repeat: no-repeat;
     display: -webkit-box;
@@ -242,13 +278,19 @@ body{
     position: relative;
 }
 
+.banner-data {
+    margin: 0 auto;
+    width: 85%;
+}
+
 .certification-in-dsa {
-    font-weight: normal !important;
+    font-weight: 100 !important;
     line-height: 1.2;
     letter-spacing: normal;
     text-align: left;
     color: #3b3a3a;
     margin-bottom: 0.5rem;
+    font-size: 44px !important;
 }
 
 .codechef-multilavel-assignment {
@@ -257,6 +299,7 @@ body{
     text-align: left;
     color: #2f2f2f;
     margin-bottom: 2.5rem !important;
+    font-size: 24px !important;
 }
 
 .exam-date {
@@ -269,11 +312,9 @@ body{
 .exam-date-expiry {
     line-height: 2;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #f0f0f0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -289,7 +330,6 @@ body{
     background-color: #f4f6f8;
     background-attachment: fixed;
     width: 100%;
-    height: 100vh;
     position: relative;
 }
 
@@ -300,12 +340,8 @@ body{
 }
 
 .dsa-certifiaction-information {
-    position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
     width: 75%;
+    margin: 0 auto;
 }
 
 .dsa-certifiaction-information p {
@@ -371,6 +407,7 @@ body{
 
 label.active {
     color: black !important;
+    font-weight: 600 !important;
 }
 
 .tabset>label:hover::after,
@@ -389,10 +426,19 @@ label.active {
 }
 
 /* close tab css*/
+.f-20-f-18 {
+    font-size: 20px;
+}
+
+.f-20-f-22 {
+    font-size: 20px;
+}
+
 .course-information {
     line-height: 1.8;
     letter-spacing: 0.3px;
     color: #2f2f2f;
+
 }
 
 .syllabus-details {
@@ -414,14 +460,16 @@ label.active {
     line-height: 1.8;
     letter-spacing: 0.3px;
     color: #3b3a3a;
+    font-size: 20px;
 }
 
 .tab-nav {
-    font-weight: bold;
     line-height: 1.5;
     letter-spacing: 0.4px;
     text-align: left;
     color: #3b3a3a;
+    font-size: 24px !important;
+    font-weight: bold !important;
 }
 
 .tool-box {
@@ -437,11 +485,16 @@ label.active {
 .tool-tip::after {
     content: "";
     position: absolute;
-    top: 15%;
-    right: 100%;
+    width: 0px;
+    height: 0px;
+    top: 8%;
+    right: 90%;
     margin-top: -20px;
-    border-width: 17px;
-    border-style: solid;
+    border-width: 50px 60px 0px 25px;
+    border-style: dashed;
+    -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    z-index: -1;
     border-color: transparent #fce689 transparent transparent;
 }
 
@@ -451,6 +504,22 @@ label.active {
     letter-spacing: 0.3px;
     text-align: left;
     color: #2f2f2f;
+}
+
+.cut-price {
+    position: relative;
+}
+
+.cut-price::before {
+    content: '';
+    width: 90px;
+    height: 2px;
+    color: black;
+    background: black;
+    position: absolute;
+    -webkit-transform: rotate(8deg);
+        transform: rotate(8deg);
+    bottom: 15px;
 }
 
 /* testimoniol section  */
@@ -465,7 +534,8 @@ label.active {
     letter-spacing: normal;
     text-align: center;
     color: #3b3a3a;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    font-size: 36px;
 }
 
 .testimonial-info {
@@ -477,17 +547,38 @@ label.active {
 
 .slider-center {
     position: relative;
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 368.74px;
+    margin: 0 auto;
+    
 }
 
 .img-content {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    width: 75% !important;
+    width: 751px !important;
     -webkit-box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
     box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
     padding: 2.5rem;
+    min-height: 368.74px;
+    position: relative;
+    margin: 0 3rem;
+}
+
+.overlay-on-card {
+    position: absolute;
+    background: #f0f0f0;
+    height: 100%;
+    width: 14%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    opacity: 0.5;
 }
 
 .img,
@@ -502,10 +593,11 @@ content {
     letter-spacing: 0.3px;
     text-align: left;
     color: #2f2f2f;
+    z-index: 1;
 }
 
 .name {
-    
+
     font-size: 10px;
     font-weight: bold;
 
@@ -521,17 +613,24 @@ content {
 
 .amits-profile {
     height: 125px;
+    z-index: 1;
     margin: auto 0 2rem 0 !important;
 }
 
 .job-profile {
-    
+
     font-size: 10px;
     line-height: 1.15;
     letter-spacing: 0.3px;
     text-align: left;
     color: #2f2f2f;
     margin-bottom: 0.5rem;
+}
+
+.foundation-certified-and-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .foundation-certified {
@@ -543,13 +642,40 @@ content {
     letter-spacing: 0.3px;
     text-align: left;
     color: #2f2f2f;
+    display: inline;
+}
+
+.foundation-color {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50px !important;
+    margin: 10px 0 0 auto !important;
+}
+
+.f-dot {
+    width: 50px !important;
 }
 
 .astrict {
     color: #a0a0a0;
     font-size: 2rem;
 }
-
+.left-overlay,.right-overlay{
+    position: absolute;
+    top: 64%;
+    background-color: #faf6f6a6;
+    height: 75%;
+    width: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+.left-overlay{
+    left: -11%;
+}
+.right-overlay{
+    right: -60%;
+}
 .left-control,
 .right-control {
     position: absolute;
@@ -559,20 +685,32 @@ content {
     font-size: 4rem;
     background-color: transparent;
     border: 0;
+    z-index: 1;
+}
+
+.left-control:focus,
+.right-control:focus {
+    outline: none;
 }
 
 .left-control {
-    left: 10%;
+    left: 15%;
     top: 50%;
 }
 
 .right-control {
     top: 50%;
-    right: 10%;
+    right: 15%;
 }
 
-.mySlides {
-    display: none;
+.mySlides{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
 }
 
 /* certified user */
@@ -586,6 +724,7 @@ content {
     letter-spacing: normal;
     text-align: center;
     color: #3b3a3a;
+    font-size: 36px;
 }
 
 .certified-user-para {
@@ -607,13 +746,26 @@ content {
     padding: 2rem;
     border: solid 0.3px #cbcbcb;
     background-color: #ffffff;
-
+    width: 221px;
+    position: relative;
+    z-index: 1;
 }
 
 .information-of-user:hover {
     -webkit-box-shadow: 0 4.5px 3px 0 rgba(0, 0, 0, 0.16);
     box-shadow: 0 4.5px 3px 0 rgba(0, 0, 0, 0.16);
     border: solid 0.5px #cbcbcb;
+}
+
+.overlay-on-card-profile {
+    position: absolute;
+    background: #f0f0f0;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.5;
 }
 
 .user-profile-photo {
@@ -699,6 +851,7 @@ content {
     line-height: 1.88;
     letter-spacing: normal;
     color: #28313b;
+    font-size: 16px;
 }
 
 .ftr-icn {
@@ -712,12 +865,48 @@ content {
     background-color: #ffffff;
 }
 
+.cc-dsa {
+    padding: 10px;
+}
+
+.cc-dsa-text {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ftr-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.codechef {
+    width: 69.1px;
+    height: 15.39px;
+    margin-top: 8px;
+}
+
 .ftr-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
     padding: 0.7rem 0;
+}
+
+.ftr-menu .ftr-active a {
+    position: relative;
+}
+
+.ftr-menu .ftr-active a::after {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    content: '';
+    bottom: -10px;
+    left: 15px;
+    background-color: #ff5912;
 }
 
 .ftr-menu-list {
